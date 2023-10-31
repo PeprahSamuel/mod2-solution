@@ -1,0 +1,81 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Setting base font styles */
+body {
+    font-family: Arial, sans-serif; /* font-family  */
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 150%; 
+    margin-bottom: 20px;
+}
+
+.section {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    color: #000000;
+    margin-left: 2px;
+    background-color: rgba(56, 226, 172, 0.74);
+}
+
+.title {
+    font-size: 125%; 
+    padding: 5px;
+    background-color: #075eff;
+    border: 1px solid black;
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    color: #000000;
+    
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+    }
+
+    .section {
+        width: 33.33%;
+        float: left;
+    }
+    .title {
+        position: static;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 991px) {
+    .section {
+        width: 40%;
+        float: left;
+        margin: 2px;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+        width: 100%;
+    }
+    .title {
+        position: static;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+
+    .title {
+        position: static;
+    }
+}
